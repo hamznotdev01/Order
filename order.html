@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>order by hamz</title>
+<style>
+  /* Background gelap */
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #0b0c10;
+    color: #fff;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    max-width: 400px;
+  }
+
+  /* Foto profil */
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0ff; /* neon border */
+    box-shadow: 0 0 20px #0ff;
+    transition: transform 0.3s;
+  }
+
+  .profile-pic:hover {
+    transform: scale(1.1);
+  }
+
+  /* Tombol neon */
+  .btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0ff;
+    border: 2px solid #0ff;
+    border-radius: 50px;
+    background: #0b0c10;
+    box-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+    transition: all 0.3s ease;
+  }
+
+  .btn img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+  }
+
+  .btn:hover {
+    color: #fff;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
+    transform: scale(1.05);
+  }
+
+  /* Hover neon warna berbeda untuk tiap platform */
+  .btn-wa:hover { box-shadow: 0 0 10px #25D366,0 0 20px #25D366,0 0 30px #25D366; border-color:#25D366; color:#25D366; }
+  .btn-tiktok:hover { box-shadow: 0 0 10px #FE2C55,0 0 20px #FE2C55,0 0 30px #FE2C55; border-color:#FE2C55; color:#FE2C55; }
+  .btn-ig:hover { box-shadow: 0 0 10px #C13584,0 0 20px #C13584,0 0 30px #C13584; border-color:#C13584; color:#C13584; }
+  .btn-testi:hover { box-shadow: 0 0 10px #FFB347,0 0 20px #FFB347,0 0 30px #FFB347; border-color:#FFB347; color:#FFB347; }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Foto profil / avatar -->
+  <img src="https://files.catbox.moe/f8z8km.jpg" alt="Profil" class="profile-pic">
+  
+  <h3 style="color=white">welcome to hamz store</h3>
+
+  <!-- Tombol WhatsApp -->
+  <a class="btn btn-wa"
+     href="https://wa.me/628895534038?text=Halo%20min%20saya%20mau%20joki%20min"
+     target="_blank">
+    <img src="https://files.catbox.moe/vi6a43.png" alt="WA">
+    Order Joki ke WA
+  </a>
+
+  <!-- Tombol TikTok -->
+  <a class="btn btn-tiktok"
+     href="https://tiktok.com/@hamzstore.08"
+     target="_blank">
+    <img src="https://files.catbox.moe/7y4gsw.png" alt="TikTok">
+    Akun TikTok
+  </a>
+
+  <!-- Tombol Instagram -->
+  <a class="btn btn-ig"
+     href="https://www.instagram.com/hamzstore_08?igsh=dDMyMDBxbzVoemh1"
+     target="_blank">
+    <img src="https://files.catbox.moe/4zf64c.png" alt="Instagram">
+    Akun Instagram
+  </a>
+
+  <!-- Tombol Testimoni -->
+  <a class="btn btn-testi"
+     href="https://whatsapp.com/channel/0029Vb6XtDy0G0XqN6jsBn35"
+     target="_blank">
+    <img src="https://files.catbox.moe/v8nzts.jpg" alt="Testimoni">
+    Saluran Testimoni
+  </a>
+
+</div>
+
+<div style="
+  position: fixed;
+  bottom: 10px;
+  right: 100px;
+  font-size: 18px;
+  color: rgba(255,255,255,0.15);
+  font-weight: bold;
+  pointer-events: none;
+">
+  by Hamz Store 08
+</div>
+
+</body>
+</html>
